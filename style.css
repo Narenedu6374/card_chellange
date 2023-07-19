@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Montserrat:wght@500;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Montserrat', sans-serif;
+}
+:root {
+  --main-font: 'Comfortaa', cursive;
+  --secondary-font: 'Poppins', sans-serif;
+  --main-color: #ffeadd;
+  --secondary-color: #e9b384;
+  --bg-color: #cee6f3;
+}
+html,
+body {
+  background-color: var(--main-color);
+  color: #000;
+}
+.container {
+  position: relative;
+  background-color: #e9b384;
+  width: 100%;
+  height: 100%;
+}
+.row {
+  width: 600px;
+  height: 280px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 10rem;
+  left: 23rem;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* box-shadow: 10px 10px 20px #fff; */
+}
+.left-side {
+  border-radius: 5px 0 0 5px;
+}
+.right-side {
+  width: 280px;
+  height: 250px;
+  margin-left: 20px;
+  border-radius: 5px 0 0 5px;
+}
+.image {
+  border-radius: 5px 0 0 5px;
+}
+h5 {
+  padding-top: 20px;
+  font-size: 14px;
+  color: #8c8888;
+  font-family: var(--main-font);
+}
+h2 {
+  padding-top: 15px;
+  font-weight: 900;
+}
+h3 {
+  font-size: 28px;
+}
+p {
+  padding-top: 10px;
+  font-size: 13px;
+  color: #5b5555;
+}
+.amount {
+  display: flex;
+  align-items: center;
+  color: #17594a;
+  margin-top: 20px;
+}
+h3 .strickout {
+  font-size: 12px;
+  font-weight: 100;
+  text-align: centers;
+  text-decoration: line-through;
+  margin-left: 20px;
+  color: #000;
+}
+button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 70px;
+  color: #fff;
+  background-color: #17594a;
+  font-size: 14px;
+}
+@media screen and (max-width: 1450px) {
+  .row {
+    left: 23%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .row {
+    left: 20%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .row {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    margin-left: 12%;
+    width: 300px;
+    height: 600px;
+    border-radius: 0 0 0px 0;
+  }
+  .img {
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 460px) {
+  .row {
+    left: 3%;
+    /* border-radius: 0 10px 10px 0; */
+  }
+}
